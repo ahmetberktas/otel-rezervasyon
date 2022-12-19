@@ -1,0 +1,1365 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext);
+@font-face {
+  font-family: font-icon;
+  src: url(../font/font-icon/font-icon.eot);
+  src: url(../font/font-icon/font-icon.eot?#iefix) format("eot"),url(../font/font-icon/font-icon.woff2) format("woff2"),url(../font/font-icon/font-icon.woff) format("woff"),url(../font/font-icon/font-icon.ttf) format("truetype"),url(../font/font-icon/font-icon.svg#font-icon) format("svg")
+}
+.icon-arrow-carett-down:before,
+.icon-arrow-carett-up:before,
+.icon-arrow-down-medium:before,
+.icon-arrow-down-tail:before,
+.icon-arrow-down-thin:before,
+.icon-arrow-down:before,
+.icon-arrow-left-medium:before,
+.icon-arrow-left-tail:before,
+.icon-arrow-left-thin:before,
+.icon-arrow-left:before,
+.icon-arrow-right-medium:before,
+.icon-arrow-right-tail:before,
+.icon-arrow-right-thin:before,
+.icon-arrow-right:before,
+.icon-arrow-up-medium:before,
+.icon-arrow-up-tail:before,
+.icon-arrow-up-thin:before,
+.icon-arrow-up:before,
+.icon-bed-solid:before,
+.icon-calendar-solid:before,
+.icon-caret-down:before,
+.icon-caret-up:before,
+.icon-checked:before,
+.icon-close:before,
+.icon-credit-card-solid:before,
+.icon-info-2:before,
+.icon-info-3:before,
+.icon-info:before,
+.icon-mastercard:before,
+.icon-menu:before,
+.icon-minus:before,
+.icon-play-2:before,
+.icon-play:before,
+.icon-plus:before,
+.icon-point:before,
+.icon-tick:before,
+.icon-user:before {
+  font-family: font-icon;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
+  display: inline-block;
+  line-height: 1;
+  speak: none;
+  font-variant: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.icon-arrow-carett-down:before {
+  content: ""
+}
+.icon-arrow-carett-up:before {
+  content: ""
+}
+.icon-arrow-down-medium:before {
+  content: ""
+}
+.icon-arrow-down-tail:before {
+  content: ""
+}
+.icon-arrow-down-thin:before {
+  content: ""
+}
+.icon-arrow-down:before {
+  content: ""
+}
+.icon-arrow-left-medium:before {
+  content: ""
+}
+.icon-arrow-left-tail:before {
+  content: ""
+}
+.icon-arrow-left-thin:before {
+  content: ""
+}
+.icon-arrow-left:before {
+  content: ""
+}
+.icon-arrow-right-medium:before {
+  content: ""
+}
+.icon-arrow-right-tail:before {
+  content: ""
+}
+.icon-arrow-right-thin:before {
+  content: ""
+}
+.icon-arrow-right:before {
+  content: ""
+}
+.icon-arrow-up-medium:before {
+  content: ""
+}
+.icon-arrow-up-tail:before {
+  content: ""
+}
+.icon-arrow-up-thin:before {
+  content: ""
+}
+.icon-arrow-up:before {
+  content: ""
+}
+.icon-bed-solid:before {
+  content: ""
+}
+.icon-calendar-solid:before {
+  content: ""
+}
+.icon-caret-down:before {
+  content: ""
+}
+.icon-caret-up:before {
+  content: ""
+}
+.icon-checked:before {
+  content: ""
+}
+.icon-close:before {
+  content: ""
+}
+.icon-credit-card-solid:before {
+  content: ""
+}
+.icon-info-2:before {
+  content: ""
+}
+.icon-info-3:before {
+  content: ""
+}
+.icon-info:before {
+  content: ""
+}
+.icon-mastercard:before {
+  content: ""
+}
+.icon-menu:before {
+  content: ""
+}
+.icon-minus:before {
+  content: ""
+}
+.icon-play-2:before {
+  content: ""
+}
+.icon-play:before {
+  content: ""
+}
+.icon-plus:before {
+  content: ""
+}
+.icon-point:before {
+  content: ""
+}
+.icon-tick:before {
+  content: ""
+}
+.icon-user:before {
+  content: ""
+}
+body,
+html {
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  outline: 0!important
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+a {
+  -webkit-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  -o-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out,-moz-box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-moz-box-shadow .3s ease-in-out;
+  color: #64758e;
+  outline: 0!important;
+  text-decoration: none
+}
+a:hover {
+  color: #536176
+}
+a:active,
+a:focus,
+a:hover {
+  text-decoration: none
+}
+b,
+strong {
+  font-weight: 700
+}
+p {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #000
+}
+.clear {
+  clear: both
+}
+.clearfix {
+  *zoom: 1
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  line-height: 0
+}
+.clearfix:after {
+  clear: both
+}
+@media only screen and (max-width:374px) {
+  .full-width-et {
+    width: 100%!important
+  }
+}
+@media only screen and (max-width:479px) {
+  .full-width-tn {
+    width: 100%!important
+  }
+}
+@media only screen and (max-width:575px) {
+  .full-width-sm {
+    width: 100%!important
+  }
+}
+@media only screen and (max-width:767px) {
+  .full-width-md {
+    width: 100%!important
+  }
+}
+@media only screen and (max-width:991px) {
+  .full-width-lg {
+    width: 100%!important
+  }
+}
+@media only screen and (max-width:1199px) {
+  .full-width-xl {
+    width: 100%!important
+  }
+}
+.full-width {
+  width: 100%!important
+}
+.full-height {
+  height: 100%!important
+}
+.display-block {
+  display: block!important
+}
+.display-none {
+  display: none!important
+}
+.visibility-hidden {
+  visibility: hidden!important
+}
+.visibility-visible {
+  visibility: visible!important
+}
+.decimal-list {
+  list-style-type: decimal!important
+}
+.square-list {
+  list-style-type: square!important
+}
+.roman-list {
+  list-style-type: upper-roman!important
+}
+.alpha-list {
+  list-style-type: lower-alpha!important
+}
+.hr {
+  height: 1px;
+  background-color: #d4dce7;
+  margin: 15px 0
+}
+.hr-border {
+  background-color: #d4dce7;
+  width: 100px;
+  height: 4px;
+  margin: 30px auto
+}
+@media only screen and (max-width:767px) {
+  .hr-border {
+    margin: 20px auto
+  }
+}
+.hr-row {
+  height: 15px
+}
+body {
+  background-color: #fff;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,Tahoma;
+  font-size: 16px;
+  font-weight: 400;
+  color: #64758e;
+  min-width: 320px;
+  line-height: 1.3
+}
+main {
+  min-height: 100%;
+  min-width: 320px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+#content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  *zoom: 1
+}
+#content:after,
+#content:before {
+  display: table;
+  content: "";
+  line-height: 0
+}
+#content:after {
+  clear: both
+}
+_:-ms-fullscreen,
+:root main {
+  display: block;
+  min-height: 100%;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit
+}
+_:-ms-fullscreen,
+:root #content {
+  display: block;
+  min-height: 100%;
+  -ms-flex-direction: inherit;
+  flex-direction: inherit
+}
+@media all and (-ms-high-contrast:none) {
+  main {
+    display: block;
+    min-height: 100%;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+    -webkit-flex-direction: inherit;
+    -moz-box-orient: inherit;
+    -moz-box-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit
+  }
+  ::-ms-backdrop,
+  main {
+    display: block;
+    min-height: 100%;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit
+  }
+  #content {
+    display: block;
+    min-height: 100%;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+    -webkit-flex-direction: inherit;
+    -moz-box-orient: inherit;
+    -moz-box-direction: inherit;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit
+  }
+  #content,
+  ::-ms-backdrop {
+    display: block;
+    min-height: 100%;
+    -ms-flex-direction: inherit;
+    flex-direction: inherit
+  }
+}
+::-moz-selection {
+  background-color: #0c69f1;
+  color: #fff
+}
+::selection {
+  background-color: #0c69f1;
+  color: #fff
+}
+header {
+  background-color: #202097;
+  width: 100%
+}
+header .hdLeft {
+  float: left;
+  margin-top: 14px;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 20px
+}
+header .hdLeft p {
+  color: #fff
+}
+header .hdRight {
+  float: right;
+  margin-top: 30px;
+  margin-right: 30px
+}
+.hdRight button {
+  padding: 7px;
+  font-size: 15px
+}
+.footer .container {
+  max-width: 1080px;
+  margin: 0 auto
+}
+.footer .container .save {
+  width: 100%;
+  height: 105px;
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed
+}
+.footer .container .save button {
+  float: right;
+  margin-top: 35px;
+  margin-right: 35px;
+  width: 250px;
+  height: 40px;
+  background-color: #202097;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff
+}
+.footer .container .save #back {
+  float: left;
+  margin-left: 35px
+}
+.footer .container .save #back2 {
+  float: left;
+  margin-left: 35px
+}
+.button {
+  outline: 0;
+  resize: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,Tahoma;
+  -webkit-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+  -o-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out,-moz-box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out;
+  transition: color .3s ease-in-out,border .3s ease-in-out,background-color .3s ease-in-out,background-image .3s ease-in-out,opacity .3s ease-in-out,box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out,-moz-box-shadow .3s ease-in-out;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  text-decoration: none;
+  background-color: #009cfb;
+  color: #fff;
+  padding: 10px 15px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.2
+}
+.button:focus,
+.button:hover {
+  background-color: #0083d2;
+  color: #fff
+}
+.button--blue {
+  background-color: #009cfb;
+  color: #fff
+}
+.button--blue:focus,
+.button--blue:hover {
+  background-color: #0083d2;
+  color: #fff
+}
+.button--gray {
+  background-color: #64758e;
+  color: #fff
+}
+.button--gray:focus,
+.button--gray:hover {
+  background-color: #536176;
+  color: #fff
+}
+.button--red {
+  background-color: #ff2d55;
+  color: #fff
+}
+.button--red:focus,
+.button--red:hover {
+  background-color: #ff0434;
+  color: #fff
+}
+.button--large {
+  padding: 15px 20px;
+  font-size: 20px
+}
+.button__icon {
+  line-height: 1;
+  font-size: 120%;
+  margin-right: 8px;
+  font-weight: 400
+}
+.user-box .button {
+  margin-top: 15px
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+#step1 {
+  border-color: #000
+}
+#step1 .icons {
+  color: #000
+}
+.home {
+  width: 100%
+}
+.home .container {
+  max-width: 1080px;
+  margin: 0 auto
+}
+.home .container .steps {
+  width: 100%;
+  height: 180px;
+  margin-top: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed
+}
+.home .container .steps .stepBox {
+  width: 100px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 190px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid gray
+}
+.home .container .steps .stepBox .icons {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: gray
+}
+.home .container .steps .stepBox p {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: gray
+}
+.home .container .options {
+  width: 100%;
+  height: 250px;
+  margin-top: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ededed
+}
+.home .container .options .otels {
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px
+}
+.home .container .options .otels select {
+  width: 95%
+}
+.home .container .options .informations {
+  width: 95%;
+  height: 160px;
+  margin-left: 20px;
+  margin-top: 20px
+}
+.home .container .options .informations .informationsBox {
+  width: 25%;
+  height: 160px;
+  float: left;
+  border: 1px solid #000
+}
+.home .container .options .informations .informationsBox p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-top: 40px
+}
+.home .container .options .informations .informationsBox input {
+  margin-left: 20px;
+  width: 80%
+}
+hr {
+  width: 190px;
+  position: relative;
+  top: 70px;
+  color: gray
+}
+#step2 {
+  border-color: grey
+}
+#step2 .icons {
+  color: grey
+}
+.chaptertwo .container {
+  max-width: 1080px;
+  margin: 0 auto
+}
+.chaptertwo .container .chapter {
+  width: 100%;
+  height: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed;
+  margin-top: 20px
+}
+.chaptertwo .container .chapter .otelname {
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.chaptertwo .container .chapter .otelname .name {
+  font-size: 25px;
+  font-weight: 700
+}
+.chaptertwo .container .chapter .otelname .city {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-weight: lighter
+}
+.chaptertwo .container .chapter .otelbilgi {
+  width: 40%;
+  height: 30px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.chaptertwo .container .chapter .otelbilgi .primaryText {
+  font-size: 16px;
+  font-weight: 700
+}
+.chaptertwo .container .chapter .otelbilgi .secondaryText {
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 3px
+}
+.chaptertwo .container .chapter .otelbilgi .thirdText {
+  padding-right: 5px
+}
+.type .container {
+  max-width: 1080px;
+  margin: 0 auto
+}
+.type .container .oteltype {
+  width: 100%;
+  height: 280px;
+  margin-top: 20px
+}
+.type .container .oteltype h2 {
+  margin-left: 12px
+}
+.type .container .oteltype hr {
+  width: 97.5%;
+  margin-left: 13px;
+  color: gray
+}
+.type .container .oteltype .oteltipleri .types.active {
+  border: 2px solid green
+}
+.type .container .oteltype .oteltipleri .types {
+  border: 1px solid grey;
+  width: 32%;
+  margin-right: 10px;
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 260px;
+  float: right
+}
+.type .container .oteltype .oteltipleri .types h3 {
+  margin-left: 20px;
+  margin-top: 10px
+}
+.type .container .oteltype .oteltipleri .types .img {
+  width: 88%;
+  height: 150px;
+  margin-top: 5px;
+  margin-left: 20px
+}
+.type .container .oteltype .oteltipleri .types .img img {
+  width: 100%;
+  height: 150px
+}
+.type .container .oteltype .oteltipleri .types .datenumber {
+  width: 35%;
+  margin-left: 20px;
+  margin-top: 5px
+}
+.type .container .oteltype .oteltipleri .types .fiyat {
+  float: right;
+  width: 27%;
+  margin-top: -42px
+}
+.type .container .oteltype .oteltipleri .types #artis {
+  margin-top: 20px;
+  margin-left: 30px
+}
+.type .container #manzara {
+  margin-top: 30px
+}
+#step3 {
+  border-color: gray
+}
+#step3 .icons {
+  color: gray
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px
+}
+.container .userCards {
+  width: 53%;
+  border: 1px solid #ededed;
+  height: 750px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+.container .userCards .creditCard {
+  width: 90%;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 30px;
+  background-color: #ededed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+.container .userCards .creditCard .crCardText {
+  width: 40%;
+  height: 30px;
+  margin-left: 30px;
+  position: relative;
+  top: 20px;
+  float: left
+}
+.container .userCards .creditCard .bank {
+  width: 15%;
+  height: 30px;
+  float: right;
+  margin-right: 30px;
+  position: relative;
+  top: 20px;
+  text-align: right;
+  font-size: large
+}
+.container .userCards .creditCard .cardLogo {
+  width: 10%;
+  position: relative;
+  top: 45px;
+  margin-left: 30px;
+  font-size: 50px
+}
+.container .userCards .creditCard .cardNumber {
+  width: 85%;
+  height: 40px;
+  margin-top: 45px;
+  margin-left: 30px;
+  font-size: 27.5px
+}
+.container .userCards .creditCard .cardName {
+  width: 40%;
+  height: 20px;
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 13px;
+  padding-left: 5px;
+  text-transform: uppercase
+}
+.container .userCards .creditCard .month {
+  margin-left: 35px
+}
+.container .userCards .creditCard .month p {
+  float: left;
+  margin-top: 15px
+}
+.container .userCards .creditCard .mastercard {
+  width: 20%;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  bottom: 10px
+}
+.container .userCards .creditCard .mastercard img {
+  width: 100%;
+  height: 70px;
+  margin-top: -12px
+}
+.container .userCards .cardsinfo {
+  width: 90%;
+  margin-left: 30px;
+  margin-top: 20px;
+  height: 340px
+}
+.container .userCards .cardsinfo form {
+  width: 100%;
+  height: 350px
+}
+.container .userCards .cardsinfo form fieldset {
+  height: 400px
+}
+.container .userCards .cardsinfo form fieldset legend {
+  margin-left: 10px
+}
+.container .userCards .cardsinfo form fieldset .formText {
+  margin-left: 30px;
+  position: relative;
+  top: 40px
+}
+.container .userCards .cardsinfo form fieldset .textinput {
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 85%
+}
+.container .userCards .cardsinfo form fieldset select {
+  margin-left: 30px;
+  margin-top: 45px;
+  width: 50px
+}
+.container .userCards .cardsinfo form fieldset .cvv {
+  float: right;
+  margin-right: 150px;
+  margin-top: 20px
+}
+.container .userCards .cardsinfo form fieldset .cvvText {
+  float: right;
+  margin-right: 40px;
+  margin-top: -23px;
+  margin-bottom: 75px
+}
+.container .userOtels {
+  width: 45%;
+  height: 750px;
+  float: right;
+  background-color: #ededed;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+.container .userOtels .otelname {
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex
+}
+.container .userOtels .otelname .name {
+  font-size: 25px;
+  font-weight: 700
+}
+.container .userOtels .otelname .city {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-weight: lighter
+}
+.container .userOtels .userOtelsBox {
+  width: 43%;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 30px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox1 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 60px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox1 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox1 .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox2 {
+  width: 43%;
+  height: 70px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox2 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox2 .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox3 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox3 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox3 .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox4 {
+  width: 43%;
+  height: 70px;
+  float: left;
+  margin-top: 8px;
+  margin-left: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox4 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox4 .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox5 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+.container .userOtels .userOtelsBox5 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox5 .opDate {
+  text-align: center
+}
+.container .userOtels .userOtelsBox6 {
+  width: 88%;
+  height: 70px;
+  margin-top: 12px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 30px;
+  float: left
+}
+.container .userOtels .userOtelsBox6 input {
+  margin-top: 18px;
+  margin-left: 30px;
+  width: 85%;
+  height: 30px
+}
+.container .userOtels .userOtelsBox6 button {
+  width: 28%;
+  height: 30px;
+  background-color: #202097;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer
+}
+.container .userOtels .userOtelsBox7 {
+  width: 88%;
+  float: left;
+  height: 340px;
+  background-color: #fff;
+  margin-top: 12px;
+  margin-left: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+.container .userOtels .userOtelsBox7 .texts {
+  width: 60%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: large
+}
+.container .userOtels .userOtelsBox7 .price {
+  width: 30%;
+  float: right;
+  margin-top: 10px;
+  text-align: right;
+  padding-right: 40px
+}
+.container .userOtels .userOtelsBox7 hr {
+  width: 100%;
+  top: -5px
+}
+.container .userOtels .userOtelsBox7 .total {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px
+}
+.container .userOtels .userOtelsBox7 .totalPrice {
+  text-align: center;
+  font-size: 30px
+}
+main .done .container {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 20px
+}
+main .done .container .donePages {
+  width: 100%;
+  height: 300px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #ededed
+}
+main .done .container .donePages .doneLogo {
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 500px;
+  font-size: 80px;
+  color: green
+}
+main .done .container .donePages .rezKayit {
+  margin-top: -20px;
+  width: 52%;
+  text-align: center;
+  margin-left: 260px
+}
+main .done .container .donePages .rezButton {
+  width: 60%;
+  height: 40px;
+  margin-left: 220px;
+  margin-top: 20px
+}
+main .done .container .donePages .rezButton button {
+  width: 32%;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 3px;
+  background-color: #202097;
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer
+}
+main .done .container .doneInfo {
+  width: 100%;
+  margin-top: 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ededed;
+  height: 650px
+}
+main .done .container .doneInfo .otelname {
+  position: absolute;
+  width: 30%;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex
+}
+main .done .container .doneInfo .otelname .name {
+  font-size: 25px;
+  font-weight: 700
+}
+main .done .container .doneInfo .otelname .city {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 3px;
+  font-weight: lighter
+}
+main .done .container .doneInfo .userOtelsBox {
+  width: 43%;
+  height: 70px;
+  margin-top: 60px;
+  margin-left: 30px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox .opDate {
+  text-align: center
+}
+main .done .container .doneInfo #box1 {
+  width: 47%
+}
+main .done .container .doneInfo .userOtelsBox1 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 60px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox1 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox1 .opDate {
+  text-align: center
+}
+main .done .container .doneInfo #box2 {
+  width: 47%
+}
+main .done .container .doneInfo .userOtelsBox2 {
+  width: 43%;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 30px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox2 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox2 .opDate {
+  text-align: center
+}
+main .done .container .doneInfo .userOtelsBox3 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox3 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox3 .opDate {
+  text-align: center
+}
+main .done .container .doneInfo .userOtelsBox4 {
+  width: 43%;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 30px;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox4 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox4 .opDate {
+  text-align: center
+}
+main .done .container .doneInfo .userOtelsBox5 {
+  width: 43%;
+  height: 70px;
+  float: right;
+  margin-top: 5px;
+  margin-right: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fff
+}
+main .done .container .doneInfo .userOtelsBox5 .openDate {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox5 .opDate {
+  text-align: center
+}
+main .done .container .doneInfo .userOtelsBox7 {
+  width: 88%;
+  float: left;
+  height: 340px;
+  background-color: #fff;
+  margin-top: 12px;
+  margin-left: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px
+}
+main .done .container .doneInfo .userOtelsBox7 .texts {
+  width: 65%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: large
+}
+main .done .container .doneInfo .userOtelsBox7 .price {
+  width: 25%;
+  float: right;
+  margin-top: 10px;
+  text-align: right;
+  padding-right: 40px
+}
+main .done .container .doneInfo .userOtelsBox7 hr {
+  width: 100%;
+  top: -5px
+}
+main .done .container .doneInfo .userOtelsBox7 .total {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px
+}
+main .done .container .doneInfo .userOtelsBox7 .totalPrice {
+  text-align: center;
+  font-size: 30px
+}
+main .done .container .doneInfo #box7 {
+  width: 94.5%
+}
+.hide {
+  display: none
+}
+/*# sourceMappingURL=project.css.map */

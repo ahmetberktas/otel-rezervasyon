@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ana Sayfa | Teknasyon</title>
+    <!-- meta tags -->
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="canonical" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <meta name="robots" content="index, follow">
+    <!-- meta tags end -->
+    <!-- favicons -->
+    <link type="image/x-icon" href="assets/img/favicon/favicon.ico" rel="icon">
+    <!-- favicons end -->
+    <!-- styles-->
+    <link href="assets/css/project.css" rel="stylesheet">
+    <!-- styles end -->
+  </head>
+  <body>
+    <main>
+      <!-- header -->
+      <header>
+        <div class="hdLeft">
+          <h1>Otel</h1>
+          <p>Rezervasyon Sistemi</p>
+        </div>
+        <div class="hdRight">
+          <button><b>Yeni Rezervasyon Yap</b></button>
+        </div>
+      </header>
+      <!-- header end -->
+      <!-- content-->
+      <div class="home">
+        <div class="container">
+          <div class="steps">
+            <div class="stepBox" id="step1">
+              <ion-icon class="icons" id="icons1" name="calendar-outline"></ion-icon>
+              <p>Otel ve Tarih Seçimi</p>
+            </div>
+            <hr>
+            <div class="stepBox" id="step2">
+              <ion-icon class="icons" id="icons2" name="bed-outline"></ion-icon>
+              <p>Oda Tipi ve Manzara Seçimi</p>
+            </div>
+            <hr>
+            <div class="stepBox" id="step3">
+              <ion-icon class="icons" id="icons3" name="card-outline"></ion-icon>
+              <p>Önizleme ve Ödeme İşlemleri</p>
+            </div>
+          </div>
+          <div class="options">
+            <div class="otels">
+              <select name="otel" id="otels"></select>
+            </div>
+            <div class="informations">
+              <div class="informationsBox">
+                <p>Giriş Tarihi</p>
+                <input type="date" name="date" id="date">
+              </div>
+              <div class="informationsBox">
+                <p>Çıkış Tarihi</p>
+                <input type="date" name="date" id="date1">
+              </div>
+              <div class="informationsBox">
+                <p>Yetişkin Sayısı</p>
+                <input type="number" name="number" id="person" min="0" max="5">
+              </div>
+              <div class="informationsBox">
+                <p>Çocuk Sayısı</p>
+                <input type="number" name="number" id="children" min="0" max="5">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home">
+        <div class="container"></div>
+        <div class="steps hide">
+          <div class="stepBox"></div>
+          <ion-icon class="icons" id="icons1" name="calendar-outline"></ion-icon>
+          <p>Otel ve Tarih Seçimi</p>
+          <hr>
+          <div class="stepBox" id="step2"></div>
+          <ion-icon class="icons" id="icons2" name="bed-outline"></ion-icon>
+          <p>Oda Tipi ve Manzara Seçimi</p>
+          <hr>
+          <div class="stepBox"> </div>
+          <ion-icon class="icons" id="icons3" name="card-outline"></ion-icon>
+          <p>Önizleme ve Ödeme İşlemleri</p>
+        </div>
+      </div>
+      <main class="hide" id="step2Main">
+        <section id="selectOtels">
+          <div class="chaptertwo">
+            <div class="container">
+              <div class="chapter">
+                <div class="otelname"></div>
+                <div class="otelbilgi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="type">
+            <div class="container">
+              <div class="oteltype">
+                <h2>Oda Tip Seçimi </h2>
+                <div class="oteltipleri"></div>
+              </div>
+            </div>
+          </div>
+          <div class="type">
+            <div class="container">
+              <div class="oteltype" id="manzara">
+                <h2>Manzara Seçimi</h2>
+                <div class="oteltipleri"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="home">
+        <div class="container"></div>
+        <div class="steps hide" id="steps3">
+          <div class="stepBox"></div>
+          <ion-icon class="icons" id="icons1" name="calendar-outline"></ion-icon>
+          <p>Otel ve Tarih Seçimi</p>
+          <hr>
+          <div class="stepBox"></div>
+          <ion-icon class="icons" id="icons2" name="bed-outline"></ion-icon>
+          <p>Oda Tipi ve Manzara Seçimi</p>
+          <hr>
+          <div class="stepBox" id="step3"></div>
+          <ion-icon class="icons" id="icons3" name="card-outline"></ion-icon>
+          <p>Önizleme ve Ödeme İşlemleri</p>
+        </div>
+      </div>
+      <main class="hide" id="step3Main">
+        <section class="payment">
+          <div class="container">
+            <div class="userCards">
+              <div class="creditCard">
+                <div class="crCardText">
+                  <h1>Credit<i>Card</i></h1>
+                </div>
+                <div class="bank">
+                  <h1>BANK </h1>
+                </div>
+                <div class="cardLogo">
+                  <ion-icon name="qr-code"></ion-icon>
+                </div>
+                <div class="cardNumber">
+                  <h1 id="cardText"></h1>
+                </div>
+                <div class="cardName">
+                  <h1 id="cardName"> </h1>
+                </div>
+                <div class="month">
+                  <p id="cardMonth"> </p>
+                  <p class="hide" id="cardSlash">/</p>
+                  <p id="cardYear"></p>
+                </div>
+                <div class="mastercard"> <img src="https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg" alt=""></div>
+              </div>
+              <div class="cardsinfo">
+                <form action="">
+                  <fieldset>
+                    <legend>Kredi Kartı Bilgileri</legend>
+                    <label class="formText">Kartın Üzerindeki İsim</label><br>
+                    <input class="textinput" id="cardNameText" type="text" placeholder="Kart Üzerindeki İsim Giriniz"><br>
+                    <label class="formText">Kartın Numarası</label><br>
+                    <input class="textinput" id="cardNumber" type="text" maxlength="19" placeholder="Kart Numarasını Giriniz"><br>
+                    <label class="formText">Kart Son Kullanma Tarihi</label><br>
+                    <select id="month">
+                      <option value="01">1</option>
+                      <option value="02">2</option>
+                      <option value="03">3</option>
+                      <option value="04">4</option>
+                      <option value="05">5</option>
+                      <option value="06">6</option>
+                      <option value="07">7</option>
+                      <option value="08">8</option>
+                      <option value="09">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                    <select id="year">
+                      <option value="20">20 </option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                    <label class="cvv">CVV</label><br>
+                    <input class="cvvText" type="text" maxlength="3" placeholder="CVV Giriniz">
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div class="userOtels"></div>
+          </div>
+        </section>
+      </main>
+      <main class="hide" id="lastPage">
+        <section class="done">
+          <div class="container">
+            <div class="donePages">
+              <div class="doneLogo">
+                <ion-icon name="bag-check-outline"></ion-icon>
+              </div>
+              <div class="rezKayit">
+                <h1>Rezervasyon kaydınız alınmıştır.</h1>
+                <p>Rezervasyon özetiniz aşağıdaki gibidir. Rezervasyon kaydınızda değişiklik veya yeni rezervasyon yapmak için aşağıdaki linkleri kullanabilirsiniz.</p>
+              </div>
+              <div class="rezButton">
+                <button>Yeni Rezervasyon Yap</button>
+                <button>Rezervasyonu Güncelle</button>
+                <button>Rezervasyonu İptal Et</button>
+              </div>
+            </div>
+            <div class="doneInfo"></div>
+          </div>
+        </section>
+      </main>
+      <!-- content end -->
+      <!-- footer-->
+      <div class="footer">
+        <div class="container">
+          <div class="save">
+            <button id="btn">Kaydet ve Devam Et</button>
+            <button class="hide" id="btn2">Kaydet ve Devam Et</button>
+            <button class="hide" id="back">
+              << Geri</button>
+                <button class="hide" id="back2">
+                  << Geri</button>
+                    <button class="hide" id="paymentButton">Ödeme Yap ve Bitir</button>
+          </div>
+        </div>
+      </div>
+      <!-- footer end -->
+      <!-- mobile panel-->
+      <div class="mobile-panel" id="mobilePanel">
+        <div class="mp-content"></div>
+      </div>
+      <!-- mobile panel end-->
+    </main>
+    <!-- scripts -->
+    <script src="assets/js/project.vendor.js" type="text/javascript"></script>
+    <script src="assets/js/project.js" type="text/javascript"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- scripts end -->
+  </body>
+</html>
