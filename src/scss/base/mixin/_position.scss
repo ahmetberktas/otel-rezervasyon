@@ -1,0 +1,45 @@
+// @include placeholder(absolute, 10px, 10px, 10px, 10px);
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// @include absolute(10px, 10px, 10px, 10px);
+@mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
+  @include position(absolute, $top, $right, $bottom, $left);
+}
+
+// @include relative(10px, 10px, 10px, 10px);
+@mixin relative($top: null, $right: null, $bottom: null, $left: null) {
+  @include position(relative, $top, $right, $bottom, $left);
+}
+
+// @include fixed(10px, 10px, 10px, 10px);
+@mixin fixed($top: null, $right: null, $bottom: null, $left: null) {
+  @include position(fixed, $top, $right, $bottom, $left);
+}
+
+// @include fixedTop();
+@mixin fixedTop() {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+// @include fixedBottom();
+@mixin fixedBottom() {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// @include stickyTop();
+@mixin stickyTop() {
+  position: sticky;
+  top: 0;
+}

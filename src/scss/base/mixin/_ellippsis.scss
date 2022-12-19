@@ -1,0 +1,13 @@
+// @include ellipSis();
+@mixin ellipSis() {
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+@mixin ellipSisNone() {
+	white-space: normal;
+	overflow: auto;
+	-ms-text-overflow: inherit;
+	text-overflow: inherit;
+}

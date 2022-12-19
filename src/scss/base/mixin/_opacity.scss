@@ -1,0 +1,11 @@
+// @include opacity(0.5, 50);
+@mixin opacity($opacity, $opacityie) {
+	-webkit-opacity: $opacity;
+	-moz-opacity: $opacity;
+	-khtml-opacity: $opacity;
+	-ms-opacity: $opacity;
+	-o-opacity: $opacity;
+	opacity: $opacity;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha"(Opacity=$opacityie);
+	filter: alpha(Opacity=$opacityie);
+}

@@ -1,0 +1,28 @@
+$largeScreenDefault: 'only screen and (max-width: 1199px)'; // Large Devices, Wide Screens
+$mediumScreenDefault: 'only screen and (max-width: 991px)'; // Medium Devices, Desktops
+$smallScreenDefault: 'only screen and (max-width: 767px)'; // Small Devices, Tablets
+$smallScreen2Default: 'only screen and (max-width: 575px)'; // Small Devices, Tablets
+$tinyScreenDefault: 'only screen and (max-width: 479px)'; // Extra Small Devices, Phones
+$tinyScreen2Default: 'only screen and (max-width: 424px)'; // Extra Small Devices, Phones
+$tinyScreen3Default: 'only screen and (max-width: 374px)'; // Extra Small Devices, Phones
+$tinyScreen4Default: 'only screen and (max-width: 320px)'; // Extra Small Devices, Phones
+
+$print: 'print';
+$retina2x: 'only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and ( min--moz-device-pixel-ratio: 2),
+only screen and ( -o-min-device-pixel-ratio: 2/1),
+only screen and ( min-device-pixel-ratio: 2),
+only screen and ( min-resolution: 192dpi),
+only screen and ( min-resolution: 2dppx)';
+$retina3x: 'only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and ( min--moz-device-pixel-ratio: 3),
+only screen and ( -o-min-device-pixel-ratio: 3/1),
+only screen and ( min-device-pixel-ratio: 3),
+only screen and ( min-resolution: 288dpi),
+only screen and ( min-resolution: 3dppx)'; 
+ // @include media() { }
+@mixin media($media) {
+	@media #{$media} {
+		@content;
+	}
+}

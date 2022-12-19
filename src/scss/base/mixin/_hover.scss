@@ -1,0 +1,32 @@
+// @include hover{}
+@mixin hover {
+	&:hover {
+		@content
+	}
+}
+
+// @include hoverFocus{}
+@mixin hoverFocus {
+	&:focus,
+	&:hover {
+		@content
+	}
+}
+
+// @include hoverFocusActive{}
+@mixin hoverFocusActive {
+	&:focus,
+	&:active,
+	&:hover {
+		@content
+	}
+}
+
+// @include plainHoverFocus{}
+@mixin plainHoverFocus {
+	&,
+	&:focus,
+	&:hover {
+		@content
+	}
+}

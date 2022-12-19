@@ -1,0 +1,11 @@
+// ==========================================================================
+// Font
+// ==========================================================================
+
+// @include fontFace("Avenir", $fontPath + '/avenir/avenir-light', 300, normal);
+// @include fontFace("Avenir", $fontPath + '/avenir/avenir-book', 400, normal);
+// @include fontFace("Avenir", $fontPath + '/avenir/avenir-medium', 500, normal);
+// @include fontFace("Avenir", $fontPath + '/avenir/avenir-heavy', 700, normal);
+// @include fontFace("Avenir", $fontPath + '/avenir/avenir-black', 900, normal);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');

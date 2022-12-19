@@ -1,0 +1,764 @@
+// ==========================================================================
+// HomePage
+// ==========================================================================
+#step1{
+  border-color: black;
+  .icons{
+    color: black;
+  }
+}
+.home {
+  width: 100%;
+  .container {
+    max-width: 1080px;
+    margin: 0px auto;
+    .steps {
+      width: 100%;
+      height: 180px;
+      margin-top: 25px;
+      border-radius: 5px;
+      background-color: rgb(237, 237, 237);
+      .stepBox {
+        width: 100px;
+        float: left;
+        margin-top: 20px;
+        margin-left: 190px;
+        border-radius: 50px;
+        height: 100px;
+        background-color: white;
+        border: 1px solid gray;
+        .icons {
+          width: 60px;
+          height: 60px;
+          margin-left: 20px;
+          margin-top: 20px;
+          color: gray;
+        }
+        p {
+          text-align: center;
+          font-size: 11px;
+          font-weight: bold;
+          margin-top: 30px;
+          color: gray;
+        }
+      }
+    }
+    .options {
+      width: 100%;
+      height: 250px;
+      margin-top: 25px;
+      border-radius: 5px;
+      border: 1px solid rgb(237, 237, 237);
+      .otels {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+        select {
+          width: 95%;
+        }
+      }
+      .informations {
+        width: 95%;
+        height: 160px;
+        margin-left: 20px;
+        margin-top: 20px;
+        .informationsBox {
+          width: 25%;
+          height: 160px;
+          float: left;
+          border: 1px solid black;
+          p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+            margin-top: 40px;
+          }
+          input {
+            margin-left: 20px;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+hr {
+  width: 190px;
+  position: relative;
+  top: 70px;
+  color: gray;
+}
+
+// ==========================================================================
+// Step2
+// ==========================================================================
+#step2{
+  border-color: grey;
+  .icons{
+    color: grey;
+  }
+}
+.chaptertwo {
+  .container {
+    max-width: 1080px;
+    margin: 0px auto;
+    .chapter {
+      width: 100%;
+      height: 100px;
+      border-radius: 5px;
+      background-color: rgb(237, 237, 237);
+      margin-top: 20px;
+      .otelname {
+        position: absolute;
+        width: 30%;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 30px;
+        display: flex;
+        .name {
+          font-size: 25px;
+          font-weight: bold;
+        }
+        .city {
+          font-size: 20px;
+          margin-left: 10px;
+          margin-top: 3px;
+          font-weight: lighter;
+        }
+      }
+      .otelbilgi {
+        width: 40%;
+        height: 30px;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 30px;
+        display: flex;
+        .primaryText {
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .secondaryText {
+          font-size: 13px;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-top: 3px;
+        }
+        .thirdText {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+.type {
+  .container{
+    max-width: 1080px;
+    margin: 0px auto;
+    .oteltype{
+      width: 100%;
+      height: 280px;
+      margin-top: 20px;
+      h2 {
+        margin-left: 12px;
+      }
+      hr {
+        width: 97.5%;
+        margin-left: 13px;
+        color: gray;
+      }
+      .oteltipleri{
+        .types.active {
+          border: 2px solid green;
+        }
+        .types{
+          border: 1px solid grey;
+          width: 32%;
+          margin-right: 10px;
+          margin-top: 10px;
+          border-radius: 5px;
+          height: 260px;
+          float: right;
+          h3{
+            margin-left: 20px;
+            margin-top: 10px;
+          }
+          .img{
+            width: 88%;
+            height: 150px;
+            margin-top: 5px;
+            margin-left: 20px;
+            img{
+              width: 100%;
+              height: 150px;
+            }
+          }
+          .datenumber{
+            width: 35%;
+            margin-left: 20px;
+            margin-top: 5px;
+          }
+          .fiyat{
+            float: right;
+            width: 27%;
+            margin-top: -42px;
+          }
+          #artis{
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+    #manzara{
+      margin-top: 30px;
+    }
+  }
+}
+
+// ==========================================================================
+// Step3
+// ==========================================================================
+
+#step3{
+  border-color: gray;
+  .icons{
+    color: gray;
+  }
+}
+.container{
+  max-width: 1080px;
+  margin: 0px auto;
+  margin-top: 20px;
+  .userCards{
+    width: 53%;
+    border: 1px solid rgb(237, 237, 237);
+    height: 750px;
+    float: left;
+    border-radius: 5px;
+    .creditCard{
+      width: 90%;
+      height: 280px;
+      margin-top: 20px;
+      margin-left: 30px;
+      background-color: rgb(237, 237, 237);
+      border-radius: 5px;
+      .crCardText{
+        width: 40%;
+        height: 30px;
+        margin-left: 30px;
+        position: relative;
+        top: 20px;
+        float: left;
+      }
+      .bank{
+        width: 15%;
+        height: 30px;
+        float: right;
+        margin-right: 30px;
+        position: relative;
+        top: 20px;
+        text-align: right;
+        font-size: large;
+      }
+      .cardLogo{
+        width: 10%;
+        position: relative;
+        top: 45px;
+        margin-left: 30px;
+        font-size: 50px;
+      }
+      .cardNumber{
+        width: 85%;
+        height: 40px;
+        margin-top: 45px;
+        margin-left: 30px;
+        font-size: 27.5px;
+      }
+      .cardName{
+        width: 40%;
+        height: 20px;
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 13px;
+        padding-left: 5px;
+        text-transform: uppercase;
+      }
+      .month{
+        margin-left: 35px;
+        p{
+          float: left;
+          margin-top: 15px;
+        }
+      }
+      .mastercard{
+        width: 20%;
+        height: 50px;
+        float: right;
+        margin-right: 20px;
+        position: relative;
+        bottom: 10px;
+        img{
+          width: 100%;
+          height: 70px;
+          margin-top: -12px;
+        }
+      }
+    }
+    .cardsinfo{
+      width: 90%;
+      margin-left: 30px;
+      margin-top: 20px;
+      height: 340px;
+      form{
+        width: 100%;
+        height: 350px;
+        fieldset{
+          height: 400px;
+          legend{
+            margin-left: 10px;
+          }
+          .formText{
+            margin-left: 30px;
+            position: relative;
+            top: 40px;
+          }
+          .textinput{
+            margin-left: 30px;
+            margin-top: 40px;
+            width: 85%;
+          }
+          select{
+            margin-left: 30px;
+            margin-top: 45px;
+            width: 50px;
+          }
+          .cvv{
+            float: right;
+            margin-right: 150px;
+            margin-top: 20px;
+          }
+          .cvvText{
+            float: right;
+            margin-right: 40px;
+            margin-top: -23px;
+            margin-bottom: 75px;
+          }
+        }
+      }
+    }
+  }
+  .userOtels{
+    width: 45%;
+    height: 750px;
+    float: right;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    .otelname{
+      position: absolute;
+      width: 30%;
+      height: 30px;
+      margin-top: 15px;
+      margin-left: 30px;
+      display: flex;
+      .name{
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .city{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 3px;
+        font-weight: lighter;
+      }
+    }
+    .userOtelsBox{
+      width: 43%;
+      height: 70px;
+      margin-top: 60px;
+      margin-left: 30px;
+      float: left;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox1{
+      width: 43%;
+      height: 70px;
+      float: right;
+      margin-top: 60px;
+      margin-right: 30px;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox2{
+      width: 43%;
+      height: 70px;
+      float: left;
+      margin-top: 8px;
+      margin-left: 30px;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox3{
+      width: 43%;
+      height: 70px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 30px;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox4{
+      width: 43%;
+      height: 70px;
+      float: left;
+      margin-top: 8px;
+      margin-left: 30px;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox5{
+      width: 43%;
+      height: 70px;
+      float: right;
+      margin-top: 8px;
+      margin-right: 30px;
+      border-radius: 5px;
+      background-color: white;
+      .openDate{
+        text-align: center;
+        margin-top: 5px;
+        font-size:large;
+      }
+      .opDate{
+        text-align: center;
+      }
+    }
+    .userOtelsBox6{
+      width: 88%;
+      height: 70px;
+      margin-top: 12px;
+      border-radius: 5px;
+      background-color: white;
+      margin-left: 30px;
+      float: left;
+      input {
+        margin-top: 18px;
+        margin-left: 30px;
+        width: 85%;
+        height: 30px;
+      }
+      button {
+        width: 28%;
+        height: 30px;
+        background-color: rgb(32, 32, 151);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .userOtelsBox7{
+      width: 88%;
+      float: left;
+      height: 340px;
+      background-color: white;
+      margin-top: 12px;
+      margin-left: 30px;
+      border-radius: 5px;
+      .texts{
+        width: 60%;
+        float: left;
+        margin-top: 10px;
+        margin-left: 30px;
+        font-size: large;
+      }
+      .price{
+        width: 30%;
+        float: right;
+        margin-top: 10px;
+        text-align: right;
+        padding-right: 40px;
+      }
+      hr{
+        width: 100%;
+        top: -5px;
+      }
+      .total{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+      }
+      .totalPrice{
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// Step4
+// ==========================================================================
+
+main {
+  .done {
+    .container {
+      max-width: 1080px;
+      margin: 0px auto;
+      margin-top: 20px;
+      .donePages {
+        width: 100%;
+        height: 300px;
+        border-radius: 5px;
+        border: 1px solid rgb(237, 237, 237);
+        .doneLogo{
+          width: 50px;
+          margin-top: 30px;
+          margin-left: 500px;
+          font-size: 80px;
+          color: green;
+        }
+        .rezKayit{
+          margin-top: -20px;
+          width: 52%;
+          text-align: center;
+          margin-left: 260px;
+        }
+        .rezButton{
+          width: 60%;
+          height: 40px;
+          margin-left: 220px;
+          margin-top: 20px;
+          button {
+            width: 32%;
+            height: 40px;
+            margin-top: 5px;
+            margin-left: 3px;
+            background-color: rgb(32, 32, 151);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+      }
+      .doneInfo{
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 5px;
+        background-color: rgb(237, 237, 237);
+        height: 650px;
+        .otelname{
+          position: absolute;
+          width: 30%;
+          height: 30px;
+          margin-top: 15px;
+          margin-left: 30px;
+          display: flex;
+          .name{
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .city{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 3px;
+            font-weight: lighter;
+          }
+        }
+        .userOtelsBox{
+          width: 43%;
+          height: 70px;
+          margin-top: 60px;
+          margin-left: 30px;
+          float: left;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        #box1{
+          width: 47%;
+        }
+        .userOtelsBox1{
+          width: 43%;
+          height: 70px;
+          float: right;
+          margin-top: 60px;
+          margin-right: 30px;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        #box2{
+          width: 47%;
+        }
+        .userOtelsBox2{
+          width: 43%;
+          height: 70px;
+          margin-top: 5px;
+          margin-left: 30px;
+          float: left;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        .userOtelsBox3{
+          width: 43%;
+          height: 70px;
+          float: right;
+          margin-top: 5px;
+          margin-right: 30px;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        .userOtelsBox4{
+          width: 43%;
+          height: 70px;
+          margin-top: 5px;
+          margin-left: 30px;
+          float: left;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        .userOtelsBox5{
+          width: 43%;
+          height: 70px;
+          float: right;
+          margin-top: 5px;
+          margin-right: 30px;
+          border-radius: 5px;
+          background-color: white;
+          .openDate{
+            text-align: center;
+            margin-top: 5px;
+            font-size:large;
+          }
+          .opDate{
+            text-align: center;
+          }
+        }
+        .userOtelsBox7{
+          width: 88%;
+          float: left;
+          height: 340px;
+          background-color: white;
+          margin-top: 12px;
+          margin-left: 30px;
+          border-radius: 5px;
+          .texts{
+            width: 65%;
+            float: left;
+            margin-top: 10px;
+            margin-left: 30px;
+            font-size: large;
+          }
+          .price{
+            width: 25%;
+            float: right;
+            margin-top: 10px;
+            text-align: right;
+            padding-right: 40px;
+          }
+          hr{
+            width: 100%;
+            top: -5px;
+          }
+          .total{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 15px;
+          }
+          .totalPrice{
+            text-align: center;
+            font-size: 30px;
+          }
+        }
+        #box7{
+          width: 94.5%;
+        }
+      }
+    }
+  }
+}
+
+.hide{
+  display: none;
+}

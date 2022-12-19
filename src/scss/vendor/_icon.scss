@@ -1,0 +1,273 @@
+// ==========================================================================
+// IconFont
+// ==========================================================================
+@font-face {
+	font-family: "font-icon";
+	src: url('../font/font-icon/font-icon.eot');
+	src: url('../font/font-icon/font-icon.eot?#iefix') format('eot'),
+		url('../font/font-icon/font-icon.woff2') format('woff2'),
+		url('../font/font-icon/font-icon.woff') format('woff'),
+		url('../font/font-icon/font-icon.ttf') format('truetype'),
+		url('../font/font-icon/font-icon.svg#font-icon') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "font-icon";
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+	display: inline-block;
+	line-height: 1;
+	speak: none;
+  font-variant: normal;
+  /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == arrow-carett-down {
+		$char: "\E001";
+	}
+	@if $filename == arrow-carett-up {
+		$char: "\E002";
+	}
+	@if $filename == arrow-down-medium {
+		$char: "\E003";
+	}
+	@if $filename == arrow-down-tail {
+		$char: "\E004";
+	}
+	@if $filename == arrow-down-thin {
+		$char: "\E005";
+	}
+	@if $filename == arrow-down {
+		$char: "\E006";
+	}
+	@if $filename == arrow-left-medium {
+		$char: "\E007";
+	}
+	@if $filename == arrow-left-tail {
+		$char: "\E008";
+	}
+	@if $filename == arrow-left-thin {
+		$char: "\E009";
+	}
+	@if $filename == arrow-left {
+		$char: "\E00A";
+	}
+	@if $filename == arrow-right-medium {
+		$char: "\E00B";
+	}
+	@if $filename == arrow-right-tail {
+		$char: "\E00C";
+	}
+	@if $filename == arrow-right-thin {
+		$char: "\E00D";
+	}
+	@if $filename == arrow-right {
+		$char: "\E00E";
+	}
+	@if $filename == arrow-up-medium {
+		$char: "\E00F";
+	}
+	@if $filename == arrow-up-tail {
+		$char: "\E010";
+	}
+	@if $filename == arrow-up-thin {
+		$char: "\E011";
+	}
+	@if $filename == arrow-up {
+		$char: "\E012";
+	}
+	@if $filename == bed-solid {
+		$char: "\E013";
+	}
+	@if $filename == calendar-solid {
+		$char: "\E014";
+	}
+	@if $filename == caret-down {
+		$char: "\E015";
+	}
+	@if $filename == caret-up {
+		$char: "\E016";
+	}
+	@if $filename == checked {
+		$char: "\E017";
+	}
+	@if $filename == close {
+		$char: "\E018";
+	}
+	@if $filename == credit-card-solid {
+		$char: "\E019";
+	}
+	@if $filename == info-2 {
+		$char: "\E01A";
+	}
+	@if $filename == info-3 {
+		$char: "\E01B";
+	}
+	@if $filename == info {
+		$char: "\E01C";
+	}
+	@if $filename == mastercard {
+		$char: "\E01D";
+	}
+	@if $filename == menu {
+		$char: "\E01E";
+	}
+	@if $filename == minus {
+		$char: "\E01F";
+	}
+	@if $filename == play-2 {
+		$char: "\E020";
+	}
+	@if $filename == play {
+		$char: "\E021";
+	}
+	@if $filename == plus {
+		$char: "\E022";
+	}
+	@if $filename == point {
+		$char: "\E023";
+	}
+	@if $filename == tick {
+		$char: "\E024";
+	}
+	@if $filename == user {
+		$char: "\E025";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-arrow-carett-down {
+	@include icon(arrow-carett-down);
+}
+.icon-arrow-carett-up {
+	@include icon(arrow-carett-up);
+}
+.icon-arrow-down-medium {
+	@include icon(arrow-down-medium);
+}
+.icon-arrow-down-tail {
+	@include icon(arrow-down-tail);
+}
+.icon-arrow-down-thin {
+	@include icon(arrow-down-thin);
+}
+.icon-arrow-down {
+	@include icon(arrow-down);
+}
+.icon-arrow-left-medium {
+	@include icon(arrow-left-medium);
+}
+.icon-arrow-left-tail {
+	@include icon(arrow-left-tail);
+}
+.icon-arrow-left-thin {
+	@include icon(arrow-left-thin);
+}
+.icon-arrow-left {
+	@include icon(arrow-left);
+}
+.icon-arrow-right-medium {
+	@include icon(arrow-right-medium);
+}
+.icon-arrow-right-tail {
+	@include icon(arrow-right-tail);
+}
+.icon-arrow-right-thin {
+	@include icon(arrow-right-thin);
+}
+.icon-arrow-right {
+	@include icon(arrow-right);
+}
+.icon-arrow-up-medium {
+	@include icon(arrow-up-medium);
+}
+.icon-arrow-up-tail {
+	@include icon(arrow-up-tail);
+}
+.icon-arrow-up-thin {
+	@include icon(arrow-up-thin);
+}
+.icon-arrow-up {
+	@include icon(arrow-up);
+}
+.icon-bed-solid {
+	@include icon(bed-solid);
+}
+.icon-calendar-solid {
+	@include icon(calendar-solid);
+}
+.icon-caret-down {
+	@include icon(caret-down);
+}
+.icon-caret-up {
+	@include icon(caret-up);
+}
+.icon-checked {
+	@include icon(checked);
+}
+.icon-close {
+	@include icon(close);
+}
+.icon-credit-card-solid {
+	@include icon(credit-card-solid);
+}
+.icon-info-2 {
+	@include icon(info-2);
+}
+.icon-info-3 {
+	@include icon(info-3);
+}
+.icon-info {
+	@include icon(info);
+}
+.icon-mastercard {
+	@include icon(mastercard);
+}
+.icon-menu {
+	@include icon(menu);
+}
+.icon-minus {
+	@include icon(minus);
+}
+.icon-play-2 {
+	@include icon(play-2);
+}
+.icon-play {
+	@include icon(play);
+}
+.icon-plus {
+	@include icon(plus);
+}
+.icon-point {
+	@include icon(point);
+}
+.icon-tick {
+	@include icon(tick);
+}
+.icon-user {
+	@include icon(user);
+}

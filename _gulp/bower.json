@@ -1,0 +1,20 @@
+{
+  "name": "teknasyon",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Hasan Dinç"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

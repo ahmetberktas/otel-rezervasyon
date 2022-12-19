@@ -1,0 +1,29 @@
+extends layout/layout
+
+block append vars
+  - var pageTitle  = 'Ana Sayfa' + ' | ' + pageTitle;
+  - var bodyClass  = '';
+  - var lang = 'tr';
+  - var menuSelected = 'home';
+  - var headerClass = '';
+  - var pageMap = false;
+
+block contentMain
+
+  main    
+
+    include layout/header
+    
+    
+    // content
+    include layout/step1
+    include layout/step2
+    include layout/step3
+    include layout/step4
+    // content end 
+      
+
+    include layout/footer
+    include component/mobile-panel
+
+    

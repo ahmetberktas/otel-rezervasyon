@@ -1,0 +1,51 @@
+// @include gradientY("blue","red",80,0);
+// @mixin gradientY($colorBg1:#555, $colorBg2:#333, $gradient1: 0, $gradient2: 100) {
+// 	background-color: $colorBg1;
+// 	background-image: -moz-linear-gradient(top, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: -o-linear-gradient(top, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: -webkit-linear-gradient(top, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: linear-gradient(to bottom, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-repeat: repeat-x;
+// }
+
+// // @include gradientX("blue","red",80,0);
+// @mixin gradientX($colorBg1:#555, $colorBg2:#333, $gradient1: 0, $gradient2: 100) {
+// 	background: $colorBg1;
+// 	background-image: -moz-linear-gradient(left, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: -o-linear-gradient(left, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: -webkit-linear-gradient(left, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-image: linear-gradient(to right, $colorBg2 $gradient2+%, $colorBg1 $gradient1+%);
+// 	background-repeat: repeat-x;
+// }
+
+// @mixin gradientDirectional($colorBg1: #555, $colorBg2: #333, $deg: 45deg) {
+// 	background-color: $colorBg1;
+// 	background-repeat: repeat-x;
+// 	background-image: -moz-linear-gradient($deg, $colorBg1, $colorBg2);
+// 	background-image: -o-linear-gradient($deg, $colorBg1, $colorBg2);
+// 	background-image: -webkit-linear-gradient($deg, $colorBg1, $colorBg2);
+// 	background-image: linear-gradient($deg, $colorBg1, $colorBg2);
+// }
+
+// @mixin gradientXThreeColors($colorBg1: #00b3ee, $colorBg2: #7a43b6, $colorStop: 50, $colorBg3: #c3325f) {
+// 	background-color: $colorBg1;
+// 	background-image: linear-gradient(to right, $colorBg1, $colorBg2 $colorStop+%, $colorBg2);
+// 	background-repeat: no-repeat;
+// }
+
+// @mixin gradientYThreeColors($colorBg1: #00b3ee, $colorBg2: #7a43b6, $colorStop: 50, $colorBg3: #c3325f) {
+// 	background-color: $colorBg1;
+// 	background-image: linear-gradient($colorBg1, $colorBg2 $colorStop+%, $colorBg3);
+// 	background-repeat: no-repeat;
+// }
+
+// @mixin gradientRadial($colorBg1: #555, $colorBg2: #333) {
+// 	background-color: $colorBg1;
+// 	background-image: radial-gradient(circle, $colorBg1, $colorBg2);
+// 	background-repeat: no-repeat;
+// }
+
+// @mixin gradientStriped($colorBg1: rgba(255, 255, 255, .15), $deg: 45deg) {
+// 	background-color: $colorBg1;
+// 	background-image: linear-gradient($deg, $colorBg1 25%, transparent 25%, transparent 50%, $colorBg1 50%, $colorBg1 75%, transparent 75%, transparent);
+// }

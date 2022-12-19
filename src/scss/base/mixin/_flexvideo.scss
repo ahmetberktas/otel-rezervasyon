@@ -1,0 +1,27 @@
+// @include flexVideo();
+@mixin flexVideo() {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  padding-bottom: 56.25%;
+  height: 0;
+  >iframe,
+  >object,
+  >embed,
+  >video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// @include videoContainer("500px");
+@mixin videoContainer($max-width: 800px) {
+  position: relative;
+  max-width: $max-width;
+  &-inner {
+    @include flexVideo();
+  }
+}

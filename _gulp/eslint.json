@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "indent": 0,
+    "eol-last": 0,
+    "no-trailing-spaces": 0,
+    "no-undef": 0
+  },
+  "env": {
+    "commonjs": false,
+    "browser": false
+  }
+}

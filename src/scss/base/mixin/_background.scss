@@ -1,0 +1,21 @@
+// @include bgSize();
+@mixin bgSize($size) {
+	-webkit-background-size: $size;
+	-khtml-background-size: $size;
+	-moz-background-size: $size;
+	-ms-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}
+
+// @include bgCover();
+@mixin bgCover() {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+// @include bgColorOpacity(0,0,0, 0.5);
+@mixin bgColorOpacity($r, $g, $a, $opacity) {
+	background-color: rgba($r, $g, $a, $opacity);
+}

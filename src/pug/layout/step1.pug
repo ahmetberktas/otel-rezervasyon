@@ -1,0 +1,30 @@
+.home
+      .container
+        .steps
+          .stepBox#step1
+            ion-icon(class='icons' id='icons1' name='calendar-outline')
+            p Otel ve Tarih Seçimi
+          hr
+          .stepBox#step2
+            ion-icon(class='icons' id='icons2' name='bed-outline')
+            p Oda Tipi ve Manzara Seçimi
+          hr
+          .stepBox#step3
+            ion-icon(class='icons' id='icons3' name='card-outline')
+            p Önizleme ve Ödeme İşlemleri
+        .options
+          .otels
+            select(name='otel' id='otels')
+          .informations
+            .informationsBox
+              p Giriş Tarihi
+              input(type='date' name='date' id='date')
+            .informationsBox
+              p Çıkış Tarihi
+              input(type='date' name='date' id='date1')
+            .informationsBox
+              p Yetişkin Sayısı
+              input(type='number' name='number' id='person' min='0' max='5')
+            .informationsBox
+              p Çocuk Sayısı
+              input(type='number' name='number' id='children' min='0' max='5')

@@ -1,0 +1,16 @@
+// @include size(10px, 10px);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// @include square(10px);
+@mixin square($size) {
+  @include size($size)
+}
+
+// @include circle(10px);
+@mixin circle($size) {
+  @include square($size);
+  border-radius: 50%;
+}

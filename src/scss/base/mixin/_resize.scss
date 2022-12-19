@@ -1,0 +1,5 @@
+// @include resize(vertical)
+@mixin resize($direction) {
+  resize: $direction;
+  overflow: auto;
+}

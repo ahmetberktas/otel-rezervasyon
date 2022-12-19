@@ -1,0 +1,28 @@
+// @include imgResponsive(block)
+@mixin imgResponsive($display: block) {
+  display: $display;
+  max-width: 100%;
+  height: auto;
+}
+
+// @include imgRetina2x("image@2x.png", 200px, 100px, "image.png")
+@mixin imgRetina2x($image2x, $width1x, $height1x, $image1x: null) {
+  @if $image1x {
+    background-image: url($image1x);
+  }
+  @include media($retina2x) {
+    background-image: url($image2x);
+    background-size: $width1x $height1x;
+  }
+}
+
+// @include imgRetina3x("image@2x.png", 200px, 100px,"image.png")
+@mixin imgRetina3x($image3x, $width1x, $height1x, $image1x: null) {
+  @if $image1x {
+    background-image: url($image1x);
+  }
+  @include media($retina3x) {
+    background-image: url($image3x);
+    background-size: $width1x $height1x;
+  }
+}

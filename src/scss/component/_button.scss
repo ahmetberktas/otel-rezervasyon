@@ -1,0 +1,60 @@
+// ==========================================================================
+// Button
+// ==========================================================================
+.button {
+  @include formElementReset();
+  font-family: $fontFamilyDefault;
+  transition: $transitionLinkDefault;
+  display: inline-flex;
+  align-items: center;
+  border: 0px;
+  text-decoration: none;
+  background-color: $colorBlue1;
+  color: $colorWhite;
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  &:focus,
+  &:hover {
+    background-color: $colorBlue1Dark;
+    color: $colorWhite;
+  }
+  &--blue{
+    background-color: $colorBlue1;
+    color: $colorWhite;
+    &:focus,
+    &:hover {
+      background-color: $colorBlue1Dark;
+      color: $colorWhite;
+    }
+  }
+  &--gray{
+    background-color: $colorGray1;
+    color: $colorWhite;
+    &:focus,
+    &:hover {
+      background-color: $colorGray1Dark;
+      color: $colorWhite;
+    }
+  }
+  &--red{
+    background-color: $colorDanger;
+    color: $colorWhite;
+    &:focus,
+    &:hover {
+      background-color: $colorDangerDark;
+      color: $colorWhite;
+    }
+  }
+  &--large{
+    padding: 15px 20px;
+    font-size: 20px;
+  }
+  &__icon{
+    line-height: 1;
+    font-size: 120%;
+    margin-right: 8px;
+    font-weight: 400;
+  }
+}

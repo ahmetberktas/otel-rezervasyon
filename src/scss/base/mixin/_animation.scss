@@ -1,0 +1,41 @@
+// @include animation(example 5s linear 2s infinite alternate);
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+@mixin animationName($name) {
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+@mixin animationDuration($duration) {
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+}
+
+@mixin animationTimingFunction($timingFunction) {
+  -webkit-animation-timing-function: $timingFunction;
+  animation-timing-function: $timingFunction;
+}
+
+@mixin animationDelay($delay) {
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+@mixin animationIterationCount($iterationCount) {
+  -webkit-animation-iteration-count: $iterationCount;
+  animation-iteration-count: $iterationCount;
+}
+
+@mixin animationDirection($direction) {
+  -webkit-animation-direction: $direction;
+  animation-direction: $direction;
+}
+
+@mixin animationFillMode($fillMode) {
+  -webkit-animation-fill-mode: $fillMode;
+  animation-fill-mode: $fillMode;
+}

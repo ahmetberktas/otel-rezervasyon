@@ -1,0 +1,47 @@
+// @include textShadow(2px, 2px, 2px, rgba(0, 0, 0, 0.5));
+@mixin textShadow($horizontalLength, $verticalLength, $blurRadius, $color) {
+	-webkit-text-shadow: $horizontalLength $verticalLength $blurRadius $color;
+	-khtml-text-shadow: $horizontalLength $verticalLength $blurRadius $color;
+	-moz-text-shadow: $horizontalLength $verticalLength $blurRadius $color;
+	-o-text-shadow: $horizontalLength $verticalLength $blurRadius $color;
+	text-shadow: $horizontalLength $verticalLength $blurRadius $color;
+}
+
+// @include textShadowNone();
+@mixin textShadowNone() {
+	-webkit-text-shadow: none;
+	-khtml-text-shadow: none;
+	-moz-text-shadow: none;
+	-o-text-shadow: none;
+	text-shadow: none;
+}
+
+// @include boxShadow(2px, 2px, 2px, 2px, rgba(0, 0, 0, 0.5));
+@mixin boxShadow($horizontalLength, $verticalLength, $blurRadius, $spreadRadius, $color) {
+	-webkit-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-khtml-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-moz-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-ms-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-o-box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	box-shadow: $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+}
+
+// @include boxShadowInner(2px, 2px, 2px, 2px, rgba(0, 0, 0, 0.5));
+@mixin boxShadowInner($horizontalLength, $verticalLength, $blurRadius, $spreadRadius, $color) {
+	-webkit-box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-khtml-box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-moz-box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-ms-box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	-o-box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+	box-shadow: inset $horizontalLength $verticalLength $blurRadius $spreadRadius $color;
+}
+
+// @include boxShadowNone();
+@mixin boxShadowNone() {
+	-webkit-box-shadow: none;
+	-khtml-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+}

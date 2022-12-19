@@ -1,0 +1,200 @@
+{
+  "projectName": "project",
+  "js": {
+    "watchFile": "../src/js/**/*.js",
+    "srcFolder": "../src/js/",
+    "srcFile": [ 
+      "../src/js/**/*.js"
+    ],
+    "srcFileVendor": [
+      "../src/lib/jquery/jquery-3.6.1.min.js",
+      "../src/lib/bootstrap/dist/js/bootstrap.min.js"
+    ],
+    "srcFileAll": [
+      "../src/js/**/*.js"
+    ],
+    "distFolder": "../dist/assets/js/",
+    "distFile": "../dist/assets/js/**/*.js",
+    "distFileName": "project.js",
+    "distFileNameMin": "project.min.js",
+    "distFileVendorName": "project.vendor.js",
+    "distFileVendorNameMin": "project.vendor.min.js",
+    "distFileNameMinPrefix": ".min"
+  },
+  "css": {
+    "watchFile": "../src/scss/**/*.scss",
+    "srcFolder": "../src/scss/",
+    "srcFile": [
+      "../src/scss/*.scss"
+    ],
+    "distFolder": "../dist/assets/css/",
+    "distFile": "../dist/assets/css/**/*.css",
+    "distFileName": "project.css",
+    "distFileNameMin": "project.min.css",
+    "distFileNameMinPrefix": ".min"
+  },
+  "html": {
+    "watchFile": "../src/pug/**/*.pug",
+    "srcFolder": "../src/pug/",
+    "srcFile": [
+      "../src/pug/*.pug"
+    ],
+    "distFolder": "../dist/",
+    "distFile": "../dist/*.html",
+    "distReplaceCssSrcFileName": "project.css",
+    "distReplaceCssDistFileName": "project.min.css",
+    "distReplaceJsSrcFileName": "project.js",
+    "distReplaceJsDistFileName": "project.min.js",
+    "distReplaceJsSrcFileNameVendor": "project.vendor.js",
+    "distReplaceJsDistFileNameVendor": "project.vendor.min.js"
+  },
+  "img": {
+    "watchFile": "../src/img/**/*",
+    "srcFolder": "../src/img",
+    "srcFile": [
+      "../src/img/**/*"
+    ],
+    "distFolder": "../dist/assets/img/"
+  },
+  "sprite": {
+    "watchFile": "../src/img/sprite/**/*.png",
+    "srcFolder": "../src/img/sprite/",
+    "srcFile": [
+      "../src/img/sprite/**/*.png"
+    ],
+    "src2xFile": [
+      "../src/img/sprite/**/*@2x.png"
+    ],
+    "srcImgName": "sprite",
+    "srcImg2xName": "sprite",
+    "srcCssName": "_sprite.scss",
+    "srcImgFolder": "../src/img/",
+    "srcCssFolder": "../src/scss/vendor/",
+    "spritePath": "../img",
+    "sprite2xRetina": true
+  },
+  "icon": {
+    "watchFile": "../src/icon/svg/**/*.svg",
+    "srcFolder": "../src/icon/svg/",
+    "srcFile": [
+      "../src/icon/svg/**/*.svg"
+    ],
+    "distFolder": "../src/font/",
+    "fontName": "font-icon",
+    "fontTypes": [
+      "ttf",
+      "eot",
+      "woff",
+      "woff2",
+      "svg"
+    ],
+    "srcThemplateFileName": "../src/icon/template/_icon.scss",
+    "distThemplateFileName": "../../scss/vendor/_icon.scss",
+    "distThemplateFolder": "../font/"
+  },
+  "lib": {
+    "watchFile": "../src/lib/**/*",
+    "srcFolder": "../src/lib/",
+    "srcFile": [
+      "../src/lib/**/*"
+    ],
+    "distFolder": "../dist/assets/lib/"
+  },
+  "video": {
+    "watchFile": "../src/video/**/*",
+    "srcFolder": "../src/video/",
+    "srcFile": [
+      "../src/video/**/*"
+    ],
+    "distFolder": "../dist/assets/video/"
+  },
+  "font": {
+    "watchFile": "../src/font/**/*",
+    "srcFolder": "../src/font/",
+    "srcFile": [
+      "../src/font/**/*"
+    ],
+    "distFolder": "../dist/assets/font/"
+  },
+  "clean": {
+    "srcFile": [
+      "../dist/assets/css/*.map"
+    ],
+    "srcFileJs": [
+      "../dist/assets/js/**/*"
+    ],
+    "srcFileCss": [
+      "../dist/assets/css/**/*"
+    ],
+    "srcFileFonts": [
+      "../dist/assets/font/**/*"
+    ],
+    "srcFileImg": [
+      "../dist/assets/img/**/*"
+    ],
+    "srcFileHtml": [
+      "../dist/*.html"
+    ],
+    "srcFileAll": [
+      "../dist/**/*"
+    ]
+  },
+  "browsersync": {
+    "server": "../dist/"
+  },
+  "tasks": {
+    "default": [
+      "build-create",
+      "build-dev",
+      "build-prod",
+      "build-copy",
+      "watch",
+      "browser-sync"
+    ],
+    "serve": [
+      "watch",
+      "browser-sync"
+    ],
+    "build": [
+      "build-create",
+      "build-dev",
+      "build-prod",
+      "build-copy"
+    ],
+    "buildCreate": [
+      "sprite",
+      "icon-font"
+    ],
+    "buildCopy": [
+      "font",
+      "img",
+      "video"
+    ],
+    "buildCssJs": [
+      "js",
+      "js-min",
+      "js-vendor",
+      "js-vendor-min",
+      "css",
+      "css-min"
+    ],
+    "buildDev": [
+      "html",
+      "lint-dist-html",
+      "js",
+      "js-vendor",
+      "css",
+      "lint-dist-css",
+      "html-index"
+    ],
+    "buildProd": [
+      "html-min",
+      "lint-dist-html",
+      "js-min",
+      "js-vendor-min",
+      "css-min",
+      "lint-dist-css",
+      "html-index"
+    ]
+  }
+}

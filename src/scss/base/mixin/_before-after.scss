@@ -1,0 +1,19 @@
+// @include before();
+@mixin before() {
+  position: relative;
+  &:before {
+    display: block;
+    content: " ";
+    position: absolute;
+  }
+}
+
+// @include after();
+@mixin after() {
+  position: relative;
+  &:after {
+    display: block;
+    content: " ";
+    position: absolute;
+  }
+}

@@ -1,0 +1,43 @@
+// @include scrollbar(10px, black, gray);
+@mixin scrollbar($size, $foregroundColor, $backgroundColor) {
+   ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+   ::-webkit-scrollbar-thumb {
+    background: $foregroundColor;
+  }
+   ::-webkit-scrollbar-track {
+    background: $backgroundColor;
+  }
+  body {
+    scrollbar-face-color: $foregroundColor;
+    scrollbar-track-color: $backgroundColor;
+  }
+}
+
+@mixin scrollbarMobileHidden($overflow, $maxHeight) {
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  -webkit-overflow-scrolling: touch;
+  
+  @if $overflow=="x" {
+    overflow-x: auto;
+  }
+  @else if $overflow=="y" {
+    overflow-y: auto;
+  }
+  @else if $overflow=="xy" {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  max-height: $maxHeight;
+}

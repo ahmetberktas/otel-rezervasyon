@@ -1,0 +1,29 @@
+// @include formElementReset();
+@mixin formElementReset() {
+	outline: none;
+	resize: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	@include borderRadius(0px);
+}
+
+// @include inputCloseRemove();
+@mixin inputCloseRemove() {
+	&::-ms-reveal,
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+}
+
+// @include inputSearchCloseRemove();
+@mixin inputSearchCloseRemove() {
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		display: none;
+	}
+}

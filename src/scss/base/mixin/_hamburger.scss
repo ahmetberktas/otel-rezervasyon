@@ -1,0 +1,29 @@
+// @include hamburger( 30px, 70%, 2px, 8px);
+@mixin hamburger($size: 30px, $sizeInnerWidth: 70%, $sizeInnerHeight: 2px, $sizeInnerOffset: 8px) {
+  @include square($size);
+  &_inner,
+  &_inner:before,
+  &_inner:after {
+    position: absolute;
+    display: block;
+    height: $sizeInnerHeight;
+    background: #fff;
+  }
+  &_inner {
+    top: 50%;
+    left: 50%;
+    width: $sizeInnerWidth;
+    transform: translate(-50%, -50%);
+  }
+  &_inner:before,
+  &_inner:after {
+    width: 100%;
+    content: '';
+  }
+  &_inner:before {
+    bottom: $sizeInnerOffset;
+  }
+  &_inner:after {
+    top: $sizeInnerOffset;
+  }
+}

@@ -1,0 +1,235 @@
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+$extraLargeScreen2: 'only screen and (max-width: 1366px)';
+$extraLargeScreen: 'only screen and (max-width: 1199px)';
+$largeScreen: 'only screen and (max-width: 991px)';
+$mediumScreen2: 'only screen and (max-width: 812px)';
+$mediumScreen: 'only screen and (max-width: 767px)';
+$smallScreen: 'only screen and (max-width: 575px)';
+$tinyScreen: 'only screen and (max-width: 479px)';
+$extraTinyScreen: 'only screen and (max-width: 374px)';
+$extraTinyScreen2: 'only screen and (max-width: 342px)';
+
+$extraLargeScreenMin2: 'only screen and (min-width: 1367px)';
+$extraLargeScreenMin: 'only screen and (min-width: 1200px)';
+$largeScreenMin: 'only screen and (min-width: 992px)';
+$mediumScreenMin: 'only screen and (min-width: 768px)';
+$smallScreenMin: 'only screen and (min-width: 576px)';
+$tinyScreenMin: 'only screen and (min-width: 480px)';
+$extraTinyScreenMin: 'only screen and (min-width: 375px)';
+
+$largeScreenHeight: 'only screen and (max-height: 820px)';
+$mediumScreenHeight2: 'only screen and (max-height: 728px)';
+$mediumScreenHeight: 'only screen and (max-height: 768px)';
+$smallScreenHeight: 'only screen and (max-height: 568px)';
+$tinyScreenHeight2: 'only screen and (max-height: 528px)';
+$tinyScreenHeight: 'only screen and (max-height: 480px)';
+$extraTinyScreenHeight: 'only screen and (max-height: 420px)';
+$extraTinyScreenHeight2: 'only screen and (max-height: 400px)';
+
+// ==========================================================================
+// Paths
+// ==========================================================================
+$basePath: '../';
+$imagePath: '../img';
+$fontPath: '../font';
+$libath: '../lib';
+
+// ==========================================================================
+// Fonts
+// ==========================================================================
+$fontFamilyDefault: "Montserrat", "Helvetica Neue", Helvetica, Arial, Tahoma;
+$fontSizeDefault: 16px;
+$fontWeightDefault: 400;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+$colorWhite: #ffffff !default;
+$colorWhiteOpacity: rgba(255, 255, 255, 0.5);
+$colorBlack: #000000 !default;
+$colorOverlay: #020202 !default; 
+$colorOverlayOpacity: 0.6;
+
+$colorGray1: #64758e !default;
+$colorGray1Light: lighten($colorGray1, 8%) !default;
+$colorGray1Dark: darken($colorGray1, 8%) !default;
+
+$colorGray2: #b1bac9 !default;
+$colorGray2Light: lighten($colorGray2, 8%) !default;
+$colorGray2Dark: darken($colorGray2, 8%) !default;
+
+$colorGray3: #d4dce7 !default;
+$colorGray3Light: lighten($colorGray3, 8%) !default;
+$colorGray3Dark: darken($colorGray3, 8%) !default;
+
+$colorGray4: #ebeff4 !default;
+$colorGray4Light: lighten($colorGray4, 8%) !default;
+$colorGray4Dark: darken($colorGray4, 8%) !default;
+
+$colorGray5: #979797 !default;
+$colorGray5Light: lighten($colorGray5, 8%) !default;
+$colorGray5Dark: darken($colorGray5, 8%) !default;
+
+$colorBlue1: #009cfb !default;
+$colorBlue1Light: lighten($colorBlue1, 8%) !default;
+$colorBlue1Dark: darken($colorBlue1, 8%) !default;
+
+$colorBlue2: #22489f !default;
+$colorBlue2Light: lighten($colorBlue2, 8%) !default;
+$colorBlue2Dark: darken($colorBlue2, 8%) !default;
+
+$colorBlue3: #022157 !default;
+$colorBlue3Light: lighten($colorBlue3, 8%) !default;
+$colorBlue3Dark: darken($colorBlue3, 8%) !default;
+
+
+//Catagory
+$colorCategory1: #0c69f1 !default;
+$colorCategory1Light: lighten($colorCategory1, 8%) !default;
+$colorCategory1Dark: darken($colorCategory1, 8%) !default;
+
+$colorCategory2: #d52099 !default;
+$colorCategory2Light: lighten($colorCategory2, 8%) !default;
+$colorCategory2Dark: darken($colorCategory2, 8%) !default;
+
+$colorCategory3: #0bb5e7 !default;
+$colorCategory3Light: lighten($colorCategory3, 8%) !default;
+$colorCategory3Dark: darken($colorCategory3, 8%) !default;
+
+$colorCategory4: #4446d4 !default;
+$colorCategory4Light: lighten($colorCategory4, 8%) !default;
+$colorCategory4Dark: darken($colorCategory4, 8%) !default;
+
+$colorCategoryBg1: #e4edfb !default;
+$colorCategoryBg1Light: lighten($colorCategoryBg1, 8%) !default;
+$colorCategoryBg1Dark: darken($colorCategoryBg1, 8%) !default;
+
+$colorCategoryBg2: #f7f1f7 !default;
+$colorCategoryBg2Light: lighten($colorCategoryBg2, 8%) !default;
+$colorCategoryBg2Dark: darken($colorCategoryBg2, 8%) !default;
+
+$colorCategoryBg3: #ecf6fb !default;
+$colorCategoryBg3Light: lighten($colorCategoryBg3, 8%) !default;
+$colorCategoryBg3Dark: darken($colorCategoryBg3, 8%) !default;
+
+$colorCategoryBg4: #eaeffb !default;
+$colorCategoryBg4Light: lighten($colorCategoryBg4, 8%) !default;
+$colorCategoryBg4Dark: darken($colorCategoryBg4, 8%) !default;
+
+
+//Background
+$colorBackground1: #ffffff;
+$colorBackground1Light: lighten($colorBackground1, 8%) !default;
+$colorBackground1Dark: darken($colorBackground1, 8%) !default;
+
+//Border
+$colorDivider1: #d4dce7 !default;
+$colorDivider1Dark: darken($colorDivider1, 8%) !default;
+
+$colorDivider2: #979797 !default;
+$colorDivider2Dark: darken($colorDivider2, 8%) !default;
+
+//Selection
+$colorSelectionBgColor: #0c69f1;
+$colorSelectionColor: #ffffff;
+
+//Default
+$colorTextDefault: #64758e;
+$colorTextDefaultHover: darken($colorTextDefault, 8%) !default;
+$colorBgDefault: #ffffff;
+
+//Alert
+$colorSuccess: #29b25a !default; 
+$colorSuccessLight: lighten($colorSuccess, 54%) !default;
+$colorSuccessDark: darken($colorSuccess, 8%) !default;
+$colorInfo: #007aff !default;
+$colorInfoLight: lighten($colorInfo, 42%) !default;
+$colorInfoDark: darken($colorInfo, 8%) !default;
+$colorWarning: #fab361 !default;
+$colorWarningLight: lighten($colorWarning, 44%) !default;
+$colorWarningDark: darken($colorWarning, 8%) !default;
+$colorDanger: #ff2d55 !default;
+$colorDangerLight: lighten($colorDanger, 44%) !default;
+$colorDangerDark: darken($colorDanger, 8%) !default;
+
+
+// ==========================================================================
+// Section
+// ==========================================================================
+$sectionHomeHeroPadding: 70px;
+$sectionHomeHeroPaddingLarge: 60px;
+$sectionHomeHeroPaddingMedium: 50px;
+
+// ==========================================================================
+// Border Radius
+// ==========================================================================
+$borderRadiusDefault: 2px;
+
+// ==========================================================================
+// Animations
+// ==========================================================================
+$transitionAll: all 0.30s ease-in-out;
+$transitionLinkDefault: color 0.30s ease-in-out, border 0.30s ease-in-out, background-color 0.30s ease-in-out, background-image 0.30s ease-in-out, opacity 0.30s ease-in-out, box-shadow 0.30s ease-in-out;
+$transitionLinkDefault2: color 0.30s ease-in-out, border 0.30s ease-in-out, background-color 0.30s ease-in-out,  background-image 0.30s ease-in-out, opacity 0.30s ease-in-out, box-shadow 0.30s ease-in-out, padding 0.30s ease-in-out;
+$transitionBackground: background 0.30s ease-in-out;
+$transitionBackgroundColor: background-color 0.30s ease-in-out;
+$transitionColor: color 0.30s ease-in-out;
+$transitionBorder: border 0.30s ease-in-out;
+$transitionOpacity: opacity 0.30s ease-in-out;
+$transitionOpacity2: opacity 0.50s ease-in-out;
+$transitionBoxShadow: box-shadow 0.30s ease-in-out;
+$transitionTextShadow: text-shadow 0.30s ease-in-out;
+$transitionWidth: width 0.30s ease-in-out;
+$transitionHeight: height 0.30s ease-in-out;
+$transitionScale: transform 0.40s ease-in-out;
+$transitionVisibility: visibility 0.40s ease-in-out;
+$transitionPadding: padding 0.40s ease-in-out;
+$transitionPaddigHeight: padding 0.30s ease-in-out,
+height 0.30s ease-in-out;
+$transitionMenu: transform 0.3s, opacity 0.2s ease-in-out;
+
+// ==========================================================================
+// Social Media Colors
+// ==========================================================================
+$facebook : #3b5998;
+$facebook-medium-blue : #6d84b4;
+$facebook-lighter-blue: #afbdd4;
+$facebook-lightest-blue:#d8dfea;
+$twitter : #55acee;
+$twitter-dark-blue : #0084b4;
+$twitter-logo-blue : #00aced;
+$twitter-verified-blue: #1dcaff;
+$twitter-bg-blue : #c0deed;
+$vimeo-blue : #45bbff;
+$vimeo-sky : #90d5ec;
+$vimeo-powder : #d1eef7;
+$vimeo-purple : #c09eda;
+$vimeo-green : #aad450;
+$vimeo-yellow : #f7b42c;
+$vimeo-orange : #ff8a3c;
+$vimeo-red : #fc575e;
+$vimeo-pink : #f27490;
+$vimeo-magenta : #f49ac1;
+$vimeo-brown : #ccaa55;
+$vimeo-grey : #99aabb;
+$vimeo-mint : #66cc99;
+$flickr-blue : #0063dc;
+$flickr-pink : #ff0084;
+$flickr-grey : #999999;
+$google-plus : #dd4b39;
+$youtube : #bb0000;
+$linkedin : #007bb6;
+$instagram : #517fa4;
+$pinterest : #cb2027;
+$vine : #00bf8f;
+$tumblr : #32506d;
+$foursquare : #0072b1;
+$behance : #1769ff;
+$spotify : #00e461;
+$whatsapp : #4dc247;
+$dropbox : #007ee5;
+$skype : #12A5F4;
+$kickstarter : #86C543;
+$rss : #ff6600;
